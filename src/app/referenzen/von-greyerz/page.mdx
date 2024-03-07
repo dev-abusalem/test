@@ -1,0 +1,82 @@
+import logo from '@/images/clients/von-greyerz/logomark-dark.svg'
+import imageHero from './hero.png'
+import imageNicolasRodel from './nicolas-rodel.webp'
+
+export const caseStudy = {
+  client: 'VON GREYERZ AG',
+  title: 'Software zur Verwaltung und Handel von Edelmetallen',
+  description:
+    'Migration einer Softwarelösung bestehend aus Kundenportal und Backend zur Steuerung und Verwaltung für den Handel u. Lagerung von Edelmetallen auf aktuelle Technologien.',
+  summary: [
+    'Über Matterhorn können Edelmetalle direkt von Raffinerien in der Schweiz gekauft und in Hochsicherheitstresoren eingelagert werden.',
+    'Die erforderliche Software für die Verwaltung dieser Assets wurde von uns in einem schrittweisen Prozess auf den neuesten technischen Stand gebracht und wird seitdem kontinuierlich aktualisiert und erweitert.',
+  ],
+  logo,
+  image: { src: imageHero, licenseText: 'Image by rawpixel.com on Freepik.', 'licenseLink': 'https://www.freepik.com/free-photo/graphic-investment-stock-market-data-analysis-business_28096496.htm'},
+  date: '2019 - andauernd',
+  service: 'Softwareentwicklung',
+  testimonial: {
+    author: { name: 'Nicolas Rodel', role: 'Managing Partner' },
+    content:
+      'Herr Greyerz ist sehr zufrieden mit dem Upgrade. Backend und Frontend der Website sind viel schneller jetzt.'
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Überblick
+
+VON GREYERZ AG betreibt eine Softwarelösung bestehend aus Kundenportal und Backend zur Steuerung und Verwaltung für den Handel u. Lagerung von Edelmetallen.
+Aufgabenstellung war die Aktualisierung von Backend und Kundenportal auf aktuelle Versionen des eingesetzten Frameworks Laravel.
+Dies war jedoch nicht ohne weiteres möglich war, da zwischen der eingesetzten und der aktuellen Version von Laravel abgesehen von diversen Abhängigkeiten
+mehrere Hauptversionen lagen.
+
+Nach der initialen Analyse der vorliegenden Struktur wurde zunächst das Kundenportal schrittweise aktualisiert und im Anschluss der Code des Backends vollständig
+in eine neue Installation auf Basis des letzten verfügbaren Laravel-Releases überführt. Im Rahmen dieser Übernahme wurden diverse Codestellen überarbeitet und umgeschrieben
+unter Verwendung neuer verfügbarer Features (z.B. Flysystem, Notifiers, Middleware, etc.).
+Ebenso wurden zwischenzeitliche vorgenommene Änderungen am Livesystem in den neuen Code migriert.
+
+Nach erfolgreichem Abschluss der Migration erfolgte ein weiterer Auftrag des Kunden in Form der Umgestaltung des Onboarding-Prozesses neuer Kunden im Kundenportal sowie der
+dauerhaften Weiterführung der Systempflege und Realisierung neuer Features.
+
+Weitere Informationen, inbesondere zur Vermögenssicherung mit Gold und weiteren Edelmetallen finden Sie unter https://vongreyerz.gold.
+
+## Technologien
+
+<TagList>
+  <TagListItem>PHP</TagListItem>
+  <TagListItem>MySQL</TagListItem>
+  <TagListItem>Laravel</TagListItem>
+  <TagListItem>jQuery</TagListItem>
+  <TagListItem>Composer</TagListItem>
+  <TagListItem>HTML</TagListItem>
+  <TagListItem>CSS</TagListItem>
+  <TagListItem>Javascript</TagListItem>
+  <TagListItem>REST</TagListItem>
+  <TagListItem>Apache</TagListItem>
+  <TagListItem>Nginx</TagListItem>
+  <TagListItem>Linux</TagListItem>
+  <TagListItem>Debian</TagListItem>
+  {/* <TagListItem>Stock</TagListItem>
+  <TagListItem>Invest</TagListItem>
+  <TagListItem>Wealth Preservation</TagListItem> */}
+</TagList>
+
+<Blockquote
+  author={{ name: `${caseStudy.testimonial.author.name}`, role: `${caseStudy.testimonial.author.role}` }}
+  image={{ src: imageNicolasRodel }}
+>
+    {caseStudy.testimonial.content}
+</Blockquote>
+
+{/*
+<StatList>
+  <StatListItem value="50%" label="Geschwindigkeitsverbesserung" />
+  <StatListItem value="100%" label="Migrierter Code" />
+  <StatListItem value="2.3" label="App store rating" />
+  <StatListItem value="8" label="Pending lawsuits" />
+</StatList>
+*/}

@@ -1,0 +1,103 @@
+import logo from '@/images/clients/wissen-online/logo-dark.svg'
+import imageHero from './hero.webp'
+import imageMehlhorn from './stefan-mehlhorn.webp'
+
+export const caseStudy = {
+  client: 'wissen.online',
+  title: 'Modulare Weiterbildungs- und Personalmanagement-Software',
+  description:
+    'Erstellung der Softwarelösung wissen.online® HR Suite, bestehend aus mehreren individuell kombinierbaren Elementen auf Basis eines vorhandenen Legacy-Systems.',
+  summary: [
+    'Die wissen.online® HR Suite besteht aus mehreren individuell kombinierbaren Elementen und ist vollständig individuell. Die primären Komponenten sind TeamTrainer LMS, Digital Onboarding, sowie digitale Personalakte.',
+    'Wir haben ein Lehrer-Schüler-Lernportal vom Kunden als Ausgangslage übernommen und auf Kundenwunsch erweitert und dann schließlich vollständig umgebaut zur Weiterbildungs- und Personalmanagement-Software.',
+  ],
+  logo,
+  image: { src: imageHero, licenseText: 'wissen.online®'},
+  date: '2016 - andauernd',
+  service: 'Softwareentwicklung, Serveradministration',
+  testimonial: {
+    author: { name: 'Stefan Mehlhorn', role: 'Gesellschafter von wissen.online®' },
+    content:
+      'Wir können mit Stolz auf eine fast ein Jahrzehnt währende, äußerst fruchtbare Zusammenarbeit mit Pronego zurückblicken. Dabei begeistert uns insbesondere die beeindruckende Fähigkeit der Mitarbeiter, sich tiefgehend in die individuellen Anforderungen einzuarbeiten. [...] Pronego hat sich als zuverlässiger Partner erwiesen, dem wir bedingungslos vertrauen und der stets dazu beiträgt, unsere Erwartungen zu übertreffen.'
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Fallstudie`,
+  description: caseStudy.description,
+}
+
+## Überblick
+
+Ausgangspunkt des Projekts war ein vom Kunden angeliefertes Lehrer-Schüler-Lernportal auf Basis des PHP-Frameworks Kohana.
+Wir haben das System vollumfänglich umgebaut und mit wissen.online® HR Suite für unseren Kunden eine modulare Webanwendung
+geschaffen, die primär aus den Bereichen TeamTrainer Learn Management System (LMS), Digital Onboarding sowie der digitale Personalakte besteht.
+Der Umfang hat sich dabei während der Migration/Weiterentwicklung kontinuierlich verändert.
+
+Inhaltlich beinhaltet der Bereich TeamTrainer LMS ein Kursbuchungssystem (für Einzel- u. Serientermine),
+Fortschritt Status Tracking (bei Videos, Umfragen, Tests),
+Kommunikations- und Nachrichtensystem (z.B. mit automatischer Erfassung von Spezialfällen, wenn ein
+Lehrer oder Student nicht zum Kurs erscheinen), Videotracking (wie weit wurde ein Lernvideo geschaut),
+Stammdatenverwaltung, multiple thematische Mediencenter mit externer Storageanbindung, Inline Bildeditor, fortsetzbare Uploads, umfangreiche
+Kalenderfunktionen, diverse Möglichkeiten zum automatischen Kursimport über APIs inkl. SCORM Standard,
+Buchungsassistent für Kurse und Events (u.a. mit Konfliktu. Überschneidungsprüfung, z.B. Planung von
+Fortbildungsmaßnahmen für Mitarbeiter durch übergeordnete Verantwortliche), diverse Cronjobs zur Systemwartung,
+Online-Payment, usw.
+
+Die Bereiche Digital Onboarding und und digitale Personalakte sind eng miteinander verbunden.
+Die Funktionen umfassen hier u.a. die Stammdatenverwaltung (Unternehmen, Versicherungen,
+Arbeitsplätze, Arbeitsfunktionen etc.), Urlaubs- u.
+Gehaltverwaltung, DATEV Interface, automatisierter Benutzer-Abgleich (Export und Import mit externen
+Rechenzentren), automatisierte Kursplanung für interne Weiterbildungen, umfangreicher Onboarding Prozess für
+neue Mitarbeiter (mit Unternehmensvorstellung, Checklisten, Fragenkatalog, Dokumentenupload, etc.),
+persönliche Mediencenter.
+
+Das System befindet sich weiterhin im stetigen Wandel aufgrund neuer Feature-Wünsche.
+Weitere Informationen zur Software finden Sie unter https://wissen.online.
+
+## Technologien
+<TagList>
+  	<TagListItem>PHP</TagListItem>
+    <TagListItem>MariaDB</TagListItem>
+    <TagListItem>Kohana</TagListItem>
+    <TagListItem>jQuery</TagListItem>
+    <TagListItem>Composer</TagListItem>
+    <TagListItem>HTML</TagListItem>
+    <TagListItem>CSS</TagListItem>
+    <TagListItem>Javascript</TagListItem>
+    <TagListItem>VueJS</TagListItem>
+  	<TagListItem>Redis</TagListItem>
+  	<TagListItem>TUS</TagListItem>
+  	<TagListItem>Linux</TagListItem>
+  	<TagListItem>Debian</TagListItem>
+  	<TagListItem>Ubuntu</TagListItem>
+  	<TagListItem>Plesk</TagListItem>
+  	<TagListItem>Apache</TagListItem>
+  	<TagListItem>Nginx</TagListItem>
+  	<TagListItem>Scorm</TagListItem>
+  	<TagListItem>REST</TagListItem>
+</TagList>
+
+{/*
+## Unsere Aufgaben
+
+<TagList>
+  <TagListItem>Backend (Kohana PHP Framework)</TagListItem>
+  <TagListItem>Frontend (jQuery & VueJS)</TagListItem>
+  <TagListItem>Infrastructure (Web- & Storage Server)</TagListItem>
+</TagList>
+*/}
+
+<Blockquote
+  author={{ name: `${caseStudy.testimonial.author.name}`, role: `${caseStudy.testimonial.author.role}` }}
+  image={{ src: imageMehlhorn }}
+>
+    {caseStudy.testimonial.content}
+</Blockquote>
+
+
+<StatList>
+  <StatListItem value="TeamTrainer" label="Informationsbroschüre" href="https://wissen.online/teamtrainer.html" linkText="zum Produkt" />
+  <StatListItem value="DigitalOnboarding" label="Informationsbroschüre" href="https://wissen.online/onboarding.html" linkText="zum Produkt" />
+  <StatListItem value="digitale Personalakte" label="Weitere Infos" href="https://wissen.online/personnel.html" linkText="zum Produkt"/>
+</StatList>

@@ -1,0 +1,106 @@
+import logo from '@/images/clients/oeschberghof/logomark-dark.svg'
+import imageHero from './hero.webp'
+import imageRolandEberl from './roland-eberl.webp'
+
+export const caseStudy = {
+  client: 'diePraxis / Öschberghof',
+  title: 'Umsetzung eines komplexen Weblayouts in Contao',
+  description:
+    'Umsetzung einer komplexen Webseite für das Luxushotel Öschberghof im Schwarzwald als Subunternehmerauftrag für eine österreichische Agentur mit angeliefertem Design im CMS Contao.',
+  summary: [
+    'Der Öschberghof ist ein Golf-, Wellness- und Konferenzhotel in Donaueschingen zwischen dem Schwarzwald, der Schweiz und dem Bodensee im Süden Deutschlands.',
+    'Wir haben als Subunternehmer für die Werbeagentur die Praxis das bereitgestellte Design implementiert.',
+  ],
+  logo,
+  image: { src: imageHero, licenseText: 'Image by Freepik', licenseLink: 'https://www.freepik.com/free-photo/laptop-digital-tablet-spectacles-cup-bed_3536418.htm'},
+  date: '2021',
+  service: 'Webseitenumsetzung mit Contao CMS',
+  testimonial: {
+    author: { name: 'Roland Eberl', role: 'CEO Werbeagentur diePraxis' },
+    content:
+      'Wir sind mit der Arbeit sehr zufrieden. Die Webseite wurde wie angeboten umgesetzt und die Rechnungsstellung erfolgte ohne Nachkalkulation.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Überblick
+
+Der Öschberghof ist ein Golf-, Wellness- und Konferenzhotel in Donaueschingen zwischen dem Schwarzwald, der Schweiz und dem Bodensee im Süden Deutschlands.
+Wir haben für die österreichische Werbeagentur [die Praxis](https://www.diepraxis.cc) als Subunternehmer das bereitgestellte Weblayout implementiert.
+
+Die Umsetzung erfolgte wunschweise mit dem CMS Contao. Nachfolgend ein Auszug der Feature-Liste:
+
+- Grundinstallation Contao LTS
+- Styling diverser Standard-Elemente (Tabs, Akkordeons, Tabellen, ...) gemäß Figma-Layout
+- Einrichtung Mitglieder Login
+- Formulardatenmodul im Backend
+- Einbindung Zimmer-, Pauschalen-, Tag- & Extraangebotsmodul
+- Erweiterung mit Katalogmodul (Filterfunktion für Angebote und Zimmer)
+- Bildswitcher im Header (Videos: Youtube, Vimeo & Bilder)
+- Canonical Tag
+- Hreflang Erweiterung (x-default)
+- Query Parameter beibehalten
+- Einbindung SEO Module (SEO SERP Modul)
+- Einbindung Sitemap Modul mit Datum
+- Einbindung Open Graph Protocol Modul
+- CSS Style Editor
+- Spaltenset Modul via Autogrid
+- Lazy Loading
+- Optimierung des Page Speed
+- Konfigurierbare Weiterleitungen als Modul
+- Short URLs
+- Bild Upload Komprimierung
+- Diverse moderne CSS Scroll Effekte
+- Einbindung von externen Systemen (Buchungsformular, Newsletter, etc.)
+- Einbindung Veranstaltungskalender
+- Einbindung Speisekartenmodul
+- Parallax-Effekt
+- Content Slider
+- Suchfunktion
+- Backend Contao Login mit Hotellogo gestalten
+- Einbindung Cookiebot & zusätzliches Contao Marketing Suite Modul
+- Einbau Richsnippets (Schema.org) für Breadcrumb, Angebote, Zimmer, Hotelinfo, Öffnungszeiten, etc.
+- W3C konform
+- Bilder Sitemap
+- Sharing Funktion (WhatsApp, Social Media, etc)
+- Responsive
+- Sprachwechsler
+- Lightbox
+- Einbindung Wettermodul
+- Bewerbungsformular
+- Einbindung Social Wall
+- Erweiterung Contao, so dass Überschriften und Buttons mit einem Colorpicker versehen sind
+
+
+## Technologien
+
+<TagList>
+  <TagListItem>PHP</TagListItem>
+  <TagListItem>Contao</TagListItem>
+  <TagListItem>Figma</TagListItem>
+  <TagListItem>Javascript</TagListItem>
+  <TagListItem>HTML</TagListItem>
+  <TagListItem>CSS</TagListItem>
+  <TagListItem>Javascript</TagListItem>
+  <TagListItem>SEO</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: `${caseStudy.testimonial.author.name}`, role: `${caseStudy.testimonial.author.role}` }}
+  image={{ src: imageRolandEberl }}
+>
+  {caseStudy.testimonial.content}
+</Blockquote>
+
+{/*
+<StatList>
+  <StatListItem value="34%" label="Fewer transactions" />
+  <StatListItem value="10%" label="Slower transactions" />
+  <StatListItem value="1000ms" label="Transaction latency" />
+  <StatListItem value="3" label="Active nodes" />
+</StatList>
+ */}
